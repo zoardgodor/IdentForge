@@ -1,0 +1,6 @@
+python -m PyInstaller `
+    --name IdentForge --onedir --noconsole --noupx --icon=icon.ico `
+    --add-data "services;services" `
+    --add-data "ui;ui" `
+    --add-data "widgets;widgets" `
+    main.py

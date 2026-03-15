@@ -1,0 +1,15 @@
+Thank you for choosing ZVidDown!
+
+For more information and to view the source code,
+ please visit this website: https://github.com/zoardgodor/ZVidDown
+
+With thanks: Zoárd Gódor, developer of ZVidDown
+
+-------------------------------------------------------------------------------
+
+Köszönöjük hogy a ZVidDown-t választotta!
+
+További információért, és a forráskód
+megtekintésére tekintse meg ezt a weboldalt: https://github.com/zoardgodor/ZVidDown
+
+Köszönettel: Gódor Zoárd a ZVidDown fejlesztője

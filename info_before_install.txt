@@ -1,0 +1,11 @@
+You will now install the ZVidDown software.
+
+For more information and to view the source code,
+ visit this website: https://github.com/zoardgodor/ZVidDown
+
+--------------------------------------------------------------------------------
+
+Ezennel telepíteni fogja a ZVidDown szoftvert.
+
+További információért, és a forráskód
+megtekintésére tekintse meg ezt a weboldalt: https://github.com/zoardgodor/ZVidDown
