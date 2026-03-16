@@ -28,6 +28,8 @@ Find the latest version on the following website: https://github.com/zoardgodor/
 
 (The Installer was created with Inno Setup Compiler)
 
+**You'll need to build the Linux version yourself using PyInstaller; see below**
+
 ### 2. Running main.py
 
 Required:
