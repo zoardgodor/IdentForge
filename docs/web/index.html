@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IdentForge Web</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@faker-js/faker@9.0.0/dist/faker.umd.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <h1>IdentForge Web</h1>
+      <p class="subtitle">This is a demo version of the app. It has limited identity-generation features and does not support email saving.</p>
+    </header>
+
+    <main class="layout">
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Identity</h2>
+          <button id="generate-identity" class="btn">Generate</button>
+        </div>
+        <div class="grid">
+          <label>Full name<input id="id-name" type="text" readonly /></label>
+          <label>Username<input id="id-username" type="text" readonly /></label>
+          <label>Gender<input id="id-gender" type="text" readonly /></label>
+          <label>Address<input id="id-address" type="text" readonly /></label>
+          <label>City<input id="id-city" type="text" readonly /></label>
+          <label>Country<input id="id-country" type="text" readonly /></label>
+          <label>ZIP<input id="id-zip" type="text" readonly /></label>
+          <label>Phone<input id="id-phone" type="text" readonly /></label>
+          <label>Birthdate<input id="id-birthdate" type="text" readonly /></label>
+          <label>Job title<input id="id-job" type="text" readonly /></label>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Temp Email</h2>
+          <div class="actions">
+            <button id="create-account" class="btn">Create</button>
+            <button id="login" class="btn secondary">Login</button>
+            <button id="refresh" class="btn secondary">Refresh Inbox</button>
+          </div>
+        </div>
+
+        <div class="form">
+          <label>Email<input id="email" type="text" placeholder="user@domain" /></label>
+          <label>
+            Password
+            <div class="input-group">
+              <input id="password" type="password" />
+              <button id="toggle-password" class="btn ghost" type="button">Show</button>
+            </div>
+          </label>
+        </div>
+
+        <div class="status" id="status">Loading domains...</div>
+
+        <div class="split">
+          <div>
+            <h3>Inbox</h3>
+            <ul id="message-list" class="list"></ul>
+          </div>
+          <div>
+            <h3>Message</h3>
+            <div class="message">
+              <div class="meta" id="msg-meta"></div>
+              <div class="body" id="msg-body"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="note">
+          <p><strong></strong></p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
