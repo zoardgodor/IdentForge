@@ -142,7 +142,7 @@ async function createAccount() {
   }
 
   const faker = getFaker();
-  const username = faker ? faker.internet.userName().toLowerCase() : `user_${randomString(6)}`;
+  const username = randomString(12);
   const password = faker ? faker.internet.password({ length: 12 }) : randomString(12);
   const domain = state.domains[0].domain;
   const address = `${username}@${domain}`;
