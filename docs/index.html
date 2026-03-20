@@ -1,159 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>IdentForge – Fake Identity Generator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdentForge - Fake Identity Generator</title>
+    <link rel="stylesheet" href="web/styles.css">
     <style>
         body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #0f172a;
-            color: #e5e7eb;
             line-height: 1.6;
         }
 
-        header {
-            background: linear-gradient(135deg, #2563eb, #1e40af);
-            padding: 40px 20px;
-            text-align: center;
+        .doc-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 20px;
         }
 
-        header h1 {
+        .content-block + .content-block {
+            margin-top: 24px;
+        }
+
+        .content-block h2,
+        .panel h2 {
+            font-family: 'Source Serif 4', serif;
+            font-size: 1.4rem;
+            margin: 0 0 12px;
+            color: var(--ink);
+        }
+
+        .content-block p,
+        .content-block ul,
+        .panel p,
+        .panel ul {
             margin: 0;
-            font-size: 2.5rem;
+            color: var(--muted);
         }
 
-        header p {
-            margin-top: 10px;
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        nav {
-            display: flex;
-            justify-content: flex-end;
-            padding: 10px 20px;
-            background: #020617;
-        }
-
-        nav button {
-            background: none;
-            border: 1px solid #2563eb;
-            color: #e5e7eb;
-            padding: 6px 12px;
-            margin-left: 10px;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-
-        nav button:hover {
-            background: #2563eb;
-        }
-
-        main {
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        section {
-            margin-bottom: 50px;
-        }
-
-        h2 {
-            color: #93c5fd;
-            margin-bottom: 15px;
-        }
-
-        ul {
+        .content-block ul,
+        .panel ul {
             padding-left: 20px;
         }
 
-        .buttons a {
-            display: inline-block;
-            margin-right: 15px;
-            margin-top: 10px;
-            padding: 12px 20px;
-            background: #2563eb;
-            color: white;
+        .content-block li + li,
+        .panel li + li {
+            margin-top: 8px;
+        }
+
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .button-row a {
             text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
         }
 
-        .buttons a:hover {
-            background: #1d4ed8;
-        }
-
-        footer {
-            background: #020617;
-            padding: 20px;
+        .footer {
             text-align: center;
+            color: var(--muted);
             font-size: 0.9rem;
-            color: #9ca3af;
+            margin-top: 24px;
         }
 
-        code {
-            background: #020617;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: Consolas, monospace;
+        @media (max-width: 900px) {
+            .doc-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="page">
+        <header class="header">
+            <h1>IdentForge</h1>
+            <p class="subtitle">Generate fake identities and temporary email addresses instantly.</p>
+        </header>
 
-<header>
-    <h1>IdentForge</h1>
-    <p>Generate fake identities and temporary email addresses instantly</p>
-</header>
+        <main class="doc-grid">
+            <section class="panel">
+                <div class="content-block">
+                    <h2>About IdentForge</h2>
+                    <p>
+                        <strong>IdentForge</strong> is a tool for generating temporary identities and emails.
+                        You can create fake profiles including names, addresses, phone numbers,
+                        and disposable email accounts quickly and efficiently.
+                    </p>
+                </div>
 
-<main>
+                <div class="content-block">
+                    <h2>Main Features</h2>
+                    <ul>
+                        <li>Generate fake personal information such as names, addresses, and birth dates.</li>
+                        <li>Create temporary email addresses for testing and quick sign-ups.</li>
+                        <li>Copy generated identities to the clipboard with a single click.</li>
+                        <li>Support multiple country formats.</li>
+                        <li>Simple and lightweight desktop GUI.</li>
+                    </ul>
+                </div>
+            </section>
 
-    <section>
-        <h2>About IdentForge</h2>
-        <p>
-            <strong>IdentForge</strong> is a tool for generating temporary identities and emails.
-            You can create fake profiles including names, addresses, phone numbers,
-            and disposable email accounts quickly and efficiently.
-        </p>
-    </section>
+            <section class="panel">
+                <div class="content-block">
+                    <h2>Technologies</h2>
+                    <ul>
+                        <li>Python 3</li>
+                        <li>PySide6 (GUI)</li>
+                        <li>Random data generators</li>
+                    </ul>
+                </div>
 
-    <section>
-        <h2>Main Features</h2>
-        <ul>
-            <li>Generate fake personal information (name, address, date of birth, etc.)</li>
-            <li>Create temporary email addresses for testing or sign-ups</li>
-            <li>Copy generated identities to clipboard with one click</li>
-            <li>Supports multiple country formats</li>
-            <li>Simple and lightweight GUI</li>
-        </ul>
-    </section>
+                <div class="content-block">
+                    <h2>Download & Documentation</h2>
+                    <p>Use the web demo, download the desktop build, or browse the full project source.</p>
+                    <div class="button-row">
+                        <a href="https://zoardgodor.github.io/IdentForge/web/" target="_blank" rel="noreferrer" class="btn">Try in Browser</a>
+                        <a href="https://github.com/zoardgodor/IdentForge/releases" target="_blank" rel="noreferrer" class="btn secondary">Download Releases</a>
+                        <a href="https://github.com/zoardgodor/IdentForge" target="_blank" rel="noreferrer" class="btn secondary">GitHub / README</a>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-    <section>
-        <h2>Technologies</h2>
-        <ul>
-            <li>Python 3</li>
-            <li>PySide6 (GUI)</li>
-            <li>Random data generators</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Download & Documentation</h2>
-        <div class="buttons">
-            <a href="https://zoardgodor.github.io/IdentForge/web/" target="_blank">Try in Browser</a>
-            <a href="https://github.com/zoardgodor/IdentForge/releases" target="_blank">Download (Releases)</a>
-            <a href="https://github.com/zoardgodor/IdentForge" target="_blank">GitHub / README</a>
-        </div>
-    </section>
-
-</main>
-
-<footer>
-    © IdentForge – Created by Gódor Zoárd
-</footer>
-
+        <footer class="footer">
+            &copy; IdentForge - Created by Godor Zoard
+        </footer>
+    </div>
 </body>
 </html>
