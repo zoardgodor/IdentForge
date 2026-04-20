@@ -83,3 +83,9 @@ BY INSTALLING AND USING THE PROGRAM, YOU ACCEPT THE LICENSE AGREEMENT.
 GitHub's built-in issue reporting system
 
 EMail: zoard.godor@gmail.com
+
+The software is prohibited from being used for illegal activities!
+
+# Temp mail service: mail.tm
+
+ 
