@@ -82,7 +82,7 @@ BY INSTALLING AND USING THE PROGRAM, YOU ACCEPT THE LICENSE AGREEMENT.
 
 GitHub's built-in issue reporting system
 
-EMail: zoard.godor@gmail.com
+email: squirt-mustang-dry@duck.com
 
 The software is prohibited from being used for illegal activities!
 
